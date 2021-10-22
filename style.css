@@ -9,6 +9,7 @@
 body{
   min-height: 100vh;
   display: flex;
+  display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
   align-items: center;
   justify-content: center;
   background: #243442;
@@ -23,6 +24,16 @@ body{
   border-radius: 6px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
+
+.logo{
+  display: flex;
+  display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
+
+  justify-content: center;
+  align-items: center;
+}
+
+
 .input-box{
   position: relative;
   height: 65px;
