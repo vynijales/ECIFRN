@@ -111,3 +111,14 @@ body{
   background: #097248;
   cursor: pointer;
 }
+
+.back{
+  display: flex;
+  display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
+
+  justify-content: center;
+  align-items: center;
+}
+.back.a{
+  color:#4070F4;
+}
