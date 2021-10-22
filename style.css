@@ -1,0 +1,105 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #243442;
+    padding: 0 30px;
+}
+
+.wrapper{
+    max-width: 480px;
+    width: 100%;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 6px;
+    box-shadow: rgb(0,0,0,0.2);
+}
+
+.wrapper .input-box{
+    position: relative;
+    height: 60px;
+    margin: 25px 0;
+}
+
+.input-box input{
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    color: #a6a6a6;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    border-radius: 6px;
+    padding: 0 40px 0 16px;
+    border: 2px solid #a6a6a6;
+}
+
+.input-box  input:focus{
+    border-color: #4070f4;
+    transition: all 0.3s ease;
+}
+
+.input-box label, .input-box i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a6a6a6;
+}
+
+.input-box label{
+    left: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    background: #ffffff;
+    padding: 0 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-box  input:focus ~ label, .input-box input:valid ~ label{
+    top: 0;
+    color: #4070f4;
+    font-size: 14px;
+
+}
+
+.input-box i{
+    right: 15px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.alert{
+    display: flex;
+    align-items: center;
+    margin-top: -13px;
+}
+
+.alert .alertIcon{
+    margin-right: 8px;
+    color: #ff5a5f;
+    font-size: 18px;
+    display: none;
+}
+
+.alert .text{
+    margin-right: 8px;
+    color: #a6a6a6;
+    font-weight: 500;
+}
+
+.input-box.button #button{
+    background: #0a8754;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    cursor: not-allowed;
+}
+
+.input-box.button #button.active:hover{
+    cursor: pointer;
+    background: #265df2;   
+}
