@@ -1,15 +1,48 @@
-<html>
-  
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
   <head>
+    <meta charset="UTF-8">
+    <title> ECIFRN - ENTRAR </title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/widgets.css">
+    <!-- Fontawesome CDN Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+   </head>
+<body>
+  <div class="wrapper">
+ 
+ 
+	  <div class="logo">
+	    <img src="img/logo.png">
+	  </div>
+ 
+      <div class="input-box">
+        <input id="check_mail" type="text" required>
+        <label>Endereço de e-mail</label>
+      </div>
+      <div class="input-box">
+        <input id="check_pw" type="password" required>
+        <label>Senha</label>
+		<i class="fas fa-eye-slash show"></i>
+      </div>
+      <div class="alert">
+        <i class="fas fa-exclamation-circle error"></i>
+        <span class="text"></span>
+      </div>
+      <div class="input-box login_btn">
+        <input id="login_btn" type="button" value="Entrar">
+      </div>
+	  <div class ="align-center">
+		<a href="#" id="forgot_pw">Esqueceu a senha?</a>
+	  </div>
+
+      <div class="input-box signin_btn">
+        <input class="active" id="signin_btn" type="button" value="Cadastrar">
+      </div>
+
+	  
+  </div>
   
-    <title>index</title>
-  
-  </head>
-  
-  <body>
-    
-    <h1>Hello World!</h1>
-    
-  </body>
-  
+  <script src="js/index.js"></script>
+</body>
 </html>

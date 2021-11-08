@@ -1,39 +1,4 @@
-/* Google Font Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
-}
-body{
-  min-height: 100vh;
-  display: flex;
-  display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
-  align-items: center;
-  justify-content: center;
-  background: #243442;
-  padding: 0 35px;
-}
-.wrapper{
-  position: relative;
-  background: #ffffff;
-  max-width: 480px;
-  width: 100%;
-  padding: 35px 40px;
-  border-radius: 6px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-}
-
-.logo{
-  display: flex;
-  display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
-
-  justify-content: center;
-  align-items: center;
-}
-
-
+/* Input-box */
 .input-box{
   position: relative;
   height: 65px;
@@ -83,23 +48,8 @@ body{
   cursor: pointer;
   padding: 8px;
 }
-.alert{
-  display: flex;
-  align-items: center;
-  margin-top: -13px;
-}
-.alert .error{
-  color: #ff5a5f;
-  font-size: 18px;
-  display: none;
-  margin-right: 8px;
-}
- .text{
-  font-size: 18px;
-  font-weight: 400;
-  color: #a6a6a6;
-}
-.input-box.button input{
+
+.input-box.signin_btn input{
   border: none;
   font-size: 20px;
   color: #fff;
@@ -107,7 +57,55 @@ body{
   background: #0a8754;
   cursor: not-allowed;
 }
-.input-box.button input.active:hover{
-  background: #097248;
+
+.input-box.signin_btn input.active{
+  background: #0DAB6C;
   cursor: pointer;
+  border-color: #000000;
+}
+
+.input-box.signin_btn input.active:hover{
+  background: #0DAB6C;
+}
+
+.input-box.login_btn input{
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+  background: #1651F3;
+}
+.input-box.login_btn input:hover{
+  background: #3D6EF5;
+}
+
+.alert{
+  display: flex;
+  align-items: center;
+  margin-top: -13px;
+}
+
+.alert .error{
+  color: #ff5a5f;
+  font-size: 18px;
+  display: none;
+  margin-right: 8px;
+}
+
+.text{
+  font-size: 18px;
+  font-weight: 400;
+  color: #a6a6a6;
+}
+
+.align-center{
+  display: flex;
+  display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
+
+  justify-content: center;
+  align-items: center;
+}
+
+.align-center.confirm_text{
+  padding: 30px 0 20px;
 }

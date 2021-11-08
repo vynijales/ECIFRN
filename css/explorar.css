@@ -1,0 +1,28 @@
+body{
+min-height: 100vh;
+display: flex;
+display: -webkit-flex;
+padding: 0;
+margin: 0;
+
+}
+
+.navbar{
+display:flex;
+height: 60px;
+width: 100%;
+}
+
+.menu-1{
+background: #FF5A60;
+width: 80%;
+}
+
+.logo{
+padding: 8px 30px;
+}
+
+.menu-2{
+background: #3C3D41;
+width: 20%
+}
