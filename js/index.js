@@ -9,6 +9,9 @@ const checkPw = document.querySelector("#check_pw"),
    function redirects_signin(){
       window.location.href="cadastro.html";
    }
+   function redirects_main(){
+    window.location.href="main.html";
+ }
 
    pwShow.addEventListener("click", ()=>{
      if(checkPw.type === "password"){
@@ -25,6 +28,7 @@ const checkPw = document.querySelector("#check_pw"),
      alertText.innerText = "Credenciais válidas!";
      alertIcon.style.display = "none";
      alertText.style.color = "#097248";
+     redirects_main();
    }else {
      alertText.innerText = "Credenciais Inválidas!";
      alertIcon.style.display = "block";
