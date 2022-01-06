@@ -124,7 +124,6 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     color: #2E4057;
-
 }
 
 img {
@@ -146,4 +145,150 @@ main{
 .flex > div {
     flex: 1 1 250;
     margin: 20px;
+}
+
+/* Search-Box*/
+
+.boxContainer{
+    margin:0;
+    position: relative;
+    width: 750px;
+    height: 42px;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+.elementsContainer{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border: 4px #424242;
+    
+}
+
+.search{
+    /*border: none;*/
+    height: 100%;
+    width: 105%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 10px;
+    color: #424242;
+    font-weight: 500;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.material-icons{
+    font-size:26;
+    color:#2E4057;
+}
+
+/*Tabela*/
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+
+.table th{
+	background-color: #2e4057;
+	color:#ffffff;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #f5f5f5;
+}
+
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
+.more {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center }
+
+    
+.dropdown{
+    width: 38rem;
+    position: relative;
+    left: 32%;
+}
+
+.dropdown:hover .dropdown-list{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.dropdown-select{
+    padding: 1.5rem;
+    border-radius: 6px;  
+    border: 4px solid #424242;  
+    background-color:#fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.dropdown-list {
+    border-radius: 4px;
+    background-color: #2E4057;
+    position: absolute;
+    top:110%;
+    left:0;
+    right:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+
+
+.dropdown-list_item {
+    padding: 1rem;
+    font-size: 1.4rem;
+
 }

@@ -1,23 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <title> ECIFRN - PRINCIPAL </title>
-    <link rel="stylesheet" href="css/explorar.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- Fontawesome CDN Link -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
-   </head>
-<body>
-  <header class="navbar">
-	<div class="menu-1">
-		<div class="logo">
-			<img src="img/logo_menu.png" />
-		</div>
-	</div>
-	<div class="menu-2">
-		<span>teste@teste.com</span>
-	</div>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
+  
+  </head>
+  <body>
+  
+    <header>
+      <nav>
+  
+        <a class="logo" href="index.html"><img src="img/logo_menu.png" alt=""></a>
+  
+        <div class="boxContainer">
+          <table class="elementsContainer">
+              <tbody><tr>
+                  <td>
+                      <input type="text" placeholder="Pesquisar" class="search">
+                  </td>
+                  <td>
+                      <a href="#"><i class="material-icons">search</i></a>
+                  </td>
+              </tr>
+          </tbody></table>  
+      </div>
+  
+          <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+  
+          <ul class="nav-list">
+              <li><a href="#">Início</a></li>
+              <li><a href="/">Perfil</a></li>
+              <li><a href="/">Coleções</a></li>
+              <li><a href="/">Contatos</a></li>
+          </ul>
+      </nav>
+  
   </header>
+  
+  <h1>Resultado 01</h1>
+  
+  <table class="table">
+    
+    <thead>
+      <tr>
+       <th>Título</th>
+       <th>Autor</th>
+       <th>Descrição</th>
+       <th>Data</th>
+       <th></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="Titulo">Gostoso</td>
+            <td data-label="Autor">Matheus</td>
+            <td data-label="Descrição">Matheus Vynicius</td>
+            <td data-label="Data">02/09/2002</td>
+            <td data-label="Mais"><a href="#"><i class="material-icons">search</i></a></td>
+        </tr>
+  
+        <tr>
+          <td data-label="Titulo">Tenebroso</td>
+          <td data-label="Autor">Pedro</td>
+          <td data-label="Descrição">Pedro Goularte</td>
+          <td data-label="Data">19/04/2003</td>
+          <td data-label="Mais"><a href="#"><i class="material-icons">search</i></a></td>
+        </tr>
+  
+        <tr>
+          <td data-label="Titulo">Ausente</td>
+          <td data-label="Autor">Thiago</td>
+          <td data-label="Descrição">Thiago Ferreira</td>
+          <td data-label="Data">xx/xx/2002</td>
+          <td data-label="Mais"><a href="#"><i class="material-icons">search</i></a></td>
+        </tr>
+    </tbody>
+  
+  </table>
+  
+    <div>
+      <a class="more">
+        <i class="material-icons">add_circle_outline</i>
+      </a>
+    </div>
+  
+      <div class="dropdown">
+  
+        <div class="dropdown-select">
+          
+          <span class="select">Itens selecionados</span>
+  
+          <i class="material-icons">arrow_drop_down</i>
+          
+        </div>
+  
+        <div class="dropdown-list">
+            <div class="dropdown-list_item"><a href="#">Imagem</a></div>
+            <div class="dropdown-list_item"><a href="#">Arquivo</a></div>
+            <div class="dropdown-list_item"><a href="#">Link</a></div>
+        </div>
+  
+      </div>
+  
+  
+  
+  </body>
 
-</body>
+
+  
 </html>
