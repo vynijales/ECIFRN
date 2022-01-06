@@ -251,13 +251,16 @@ main{
     height: 10em;
     display: flex;
     align-items: center;
-    justify-content: center }
+    justify-content: center;
+    visibility:hidden;
+}
 
     
 .dropdown{
     width: 38rem;
     position: relative;
     left: 32%;
+    visibility:hidden;
 }
 
 .dropdown:hover .dropdown-list{
@@ -311,4 +314,5 @@ main{
     margin-left: 32%;
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    visibility:hidden;
   }
