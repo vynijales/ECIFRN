@@ -172,7 +172,7 @@ main{
     /*border: none;*/
     height: 100%;
     width: 105%;
-    padding: 0px 15px;
+    padding: 5px 15px;
     border-radius: 50px;
     font-size: 14px;
     color: #424242;
@@ -189,10 +189,12 @@ main{
     color:#2E4057;
 }
 
+
 /*Tabela*/
 
 .table{
-	width: 100%;
+	width: 60%;
+    margin-left: 20%;
 	border-collapse: collapse;
     margin-top: 20px;
 }
