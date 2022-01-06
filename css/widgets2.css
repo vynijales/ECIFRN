@@ -1,0 +1,93 @@
+/* Input-box */
+.input-box{
+  position: relative;
+  height: 65px;
+  margin: 25px 0;
+}
+.input-box input{
+  position: relative;
+  height: 100%;
+  width: 75%;
+  outline: none;
+  color: #a6a6a6;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 40px 0 16px;
+  border: 2px solid #a6a6a6;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid{
+  border-color: #4070F4;
+}
+.input-box i,
+.input-box label{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a6a6a6;
+  transition: all 0.3s ease;
+}
+.input-box label{
+  left: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  background: #ffffff;
+  padding: 0 6px;
+  pointer-events: none;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+  top: 0;
+  font-size: 14px;
+  color: #4070F4;
+}
+.input-box i{
+  right: 15px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.input-box.salvar_btn input{
+  border: none;
+  width: 85%;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+  background: #1651F3;
+}
+.input-box.salvar_btn input:hover{
+  background: #3D6EF5;
+}
+
+.alert{
+  display: flex;
+  align-items: center;
+  margin-top: -13px;
+}
+
+.alert .error{
+  color: #ff5a5f;
+  font-size: 18px;
+  display: none;
+  margin-right: 8px;
+}
+
+.text{
+  font-size: 18px;
+  font-weight: 400;
+  color: #a6a6a6;
+}
+
+.align-center{
+  display: flex;
+  display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
+
+  justify-content: center;
+  align-items: center;
+}
+
+.align-center.confirm_text{
+  padding: 30px 0 20px;
+}

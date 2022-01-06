@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title> ECIFRN - PRINCIPAL </title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/widgets2.css">
     <!-- Fontawesome CDN Link -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
@@ -82,7 +83,7 @@
         <tr>
           <td data-label="Titulo">Ausente</td>
           <td data-label="Autor">Thiago</td>
-          <td data-label="Matéria">Bem + ou -</td>
+          <td data-label="Matéria">Bom de peia</td>
           <td data-label="Descrição">Thiago Ferreira</td>
           <td data-label="Data">xx/xx/2002</td>
           <td data-label="Mais"><a href="#"><i class="material-icons">search</i></a></td>
@@ -91,6 +92,58 @@
   
   </table>
   
-  </body>
+    <div>
+      <a class="more">
+        <i class="material-icons">add_circle_outline</i>
+      </a>
+  
+      <div class="dropdown">
+  
+        <div class="dropdown-select">
+          
+          <span class="select">Itens selecionados</span>
+  
+          <i class="material-icons">arrow_drop_down</i>
+          
+        </div>
+  
+        <div class="dropdown-list">
+            <div class="dropdown-list_item"><a href="#">Livro</a></div>
+            <div class="dropdown-list_item"><a href="#">Audiovisual</a></div>
+            <div class="dropdown-list_item"><a href="#">Site</a></div>
+        </div>
+  
+      </div>
+    </div>
 
+    <div class="wrapper">
+        <h1>Item escolhido</h1>
+        <div class="input-box">
+          <input id="check_mail" type="text" required>
+          <label>Título</label>
+        </div>
+
+        <div class="input-box">
+          <input id="check_mail" type="date" required>
+        </div>
+
+        <div class="input-box">
+          <input id="check_pw" type="text" required>
+          <label>Autor</label>
+        </div>
+
+        <div class="input-box">
+          <input id="check_mail" type="text" required>
+          <label>Link</label>
+        </div>
+
+        <div class="input-box salvar_btn">
+          <input id="salvar_btn" type="button" value="Salvar">
+        </div>
+  
+    </div>
+
+
+  </body>
+  
 </html>
